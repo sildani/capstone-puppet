@@ -7,11 +7,8 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "capstone"
   config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-59-x64-vbox4210.box"
-  # config.vm.host_name = "daniel.puppetlabs.vm"
+  config.vm.hostname = "daniel.puppetlabs.vm"
   config.vm.network :private_network, ip: "192.168.33.10"
-  # config.vm.forward_port 80, 8080
-  # config.vm.provision :shell, :path => "centos_6_x.sh"
-
 
   # Enable provisioning with Puppet stand alone.  Puppet manifests
   # are contained in a directory path relative to this Vagrantfile.
