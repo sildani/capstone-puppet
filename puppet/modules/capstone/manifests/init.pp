@@ -1,5 +1,5 @@
 class capstone {
   
-  class { 'apache' }
+  class { 'apache': }
 
 }
