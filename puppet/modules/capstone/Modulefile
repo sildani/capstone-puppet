@@ -1,0 +1,7 @@
+name 'sildani-capstone'
+version '0.1.0'
+summary 'This module installs apache, mysql and wordpress with defaults.'
+description 'This module is the result of the Capstone lab in the Puppet Fundementals course in Puppetconf 2013. I wrote this module to complete the lab and get a better understanding of how to write modules, test them, and apply them. If I did the job well, then this should be a useful module to any consumers.'
+dependency 'puppetlabs/apache'
+dependency 'puppetlabs/mysql'
+dependency 'hunner/wordpress'
